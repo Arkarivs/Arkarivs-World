@@ -1,6 +1,6 @@
 // Configuración
-const apiKey = 'AIzaSyDu14GdFkgL48VrbwneZn9Jb1bR4c4DghU'; // 
-const searchEngineId = '4081e2b2588434b99'; // El ID que copiaste antes
+const apiKey = ''; // 
+const searchEngineId = ''; // 
 
 document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Evita que el formulario se recargue
