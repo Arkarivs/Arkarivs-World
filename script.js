@@ -1,14 +1,14 @@
-// Configuración (¡Reemplaza con tus datos!)
-const apiKey = 'AIzaSyDu14GdFkgL48VrbwneZn9Jb1bR4c4DghU'; // Obténla en Google Cloud Console
+// Configuración
+const apiKey = 'AIzaSyDu14GdFkgL48VrbwneZn9Jb1bR4c4DghU'; // 
 const searchEngineId = '4081e2b2588434b99'; // El ID que copiaste antes
 
 document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Evita que el formulario se recargue
     
     const query = document.getElementById('searchInput').value;
-    if (!query.trim()) return; // No buscar si está vacío
+    if (!query.trim()) return; // 
 
-    // Llama a la API de Google
+    // 
     fetch(`https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(query)}&key=${apiKey}&cx=${searchEngineId}`)
         .then(response => response.json())
         .then(data => {
